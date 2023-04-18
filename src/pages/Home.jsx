@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Navbar from "../scenes/Navbar";
 
-
 import DotGroup from "../scenes/DotGroup";
 import Landing from "../scenes/Landing";
 import LineGradient from "../components/LineGradient";
@@ -32,43 +31,43 @@ function Home() {
 
   return (
     // <Router>
-      <div className="app bg-deep-blue">
-        <Navbar
-          isTopOfPage={isTopOfPage}
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-        <div className="w-5/6 mx-auto md:h-full">
-          {isAboveMediumScreens && (
-            <DotGroup
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-          )}
+    <div className="app bg-deep-blue">
+      <Navbar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
+      <div className="w-5/6 mx-auto md:h-full">
+        {isAboveMediumScreens && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )}
 
-          <Landing setSelectedPage={setSelectedPage} />
-        </div>
-       
-        <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full">
-          <MySkills />
-        </div>
-        <LineGradient />
-        <div className="w-5/6 mx-auto">
-          <Projects />
-        </div>
-        <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full">
-          <Experience />
-        </div>
-        <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full">
-          <Contact />
-        </div>
-        <div>
-          <Footer />
-        </div>
+        <Landing setSelectedPage={setSelectedPage} />
       </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Experience />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </div>
     // </Router>
   );
 }

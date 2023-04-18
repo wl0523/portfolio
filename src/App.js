@@ -12,7 +12,7 @@ import React from "react";
 import Footer from "./scenes/Footer";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import ProjectDetailPage from "./pages/ProjectDetailPage";
+// import ProjectDetailPage from "./pages/ProjectDetailPage";
 import Home from "./pages/Home";
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
         <Routes>
         {/* <Route exact path="/" element={<Landing setSelectedPage={setSelectedPage}/>} /> */}
         <Route path="/" element={<Home />} />
-          <Route path="/projects/:id" element={<ProjectDetailPage />} />
+          {/* <Route path="/projects/:id" element={<ProjectDetailPage />} /> */}
         </Routes>
         {/* <LineGradient />
         <div className="w-5/6 mx-auto md:h-full">
