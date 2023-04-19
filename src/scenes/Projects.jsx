@@ -23,14 +23,18 @@ const Project = ({ title }) => {
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <a href="https://wl0523.github.io/fitness/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://wl0523.github.io/fitness/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className={overlayStyles}>
           <p className="text-2xl font-playfair">{title}</p>
           <p className="mt-7">
-          This app is a professional fitness application that allows users to
-          select or search for specific body parts they want to exercise and
-          displays detailed videos, equipment exercise, and similar target
-          exercises for the selected exercises on the next page.
+            This app is a professional fitness application that allows users to
+            select or search for specific body parts they want to exercise and
+            displays detailed videos, equipment exercise, and similar target
+            exercises for the selected exercises on the next page.
           </p>
         </div>
         <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -66,7 +70,7 @@ const Projects = () => {
           My passion for Software Developer has driven me to explore new ideas
           and take on exciting challenges. In my latest projects, I have put my
           skills and creativity to the test, and I'm excited to show you what
-          I've accomplished. You can see the demo by clicking the images!
+          I've accomplished. You can see the demo by clicking the image!
         </p>
       </motion.div>
 
@@ -88,15 +92,15 @@ const Projects = () => {
           </div>
           <Project title="Project 1" />
 
-          <Project title="Project 2" />
+          {/* <Project title="Project 2" />
 
           {/* ROW 2 */}
 
-          <Project title="Project 5" />
+          {/* <Project title="Project 5" /> */}
 
           {/* ROW 3 */}
 
-          <Project title="Project 7" />
+          {/* <Project title="Project 7" /> */}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

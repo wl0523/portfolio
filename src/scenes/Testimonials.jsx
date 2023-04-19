@@ -36,8 +36,8 @@ const Experience = () => {
 
           <p className="mt-10">
             I have experience working at NCR Corporation as a software engineer
-            Intern, where I contributed to the development of several successful
-            software projects. During my time there, I gained valuable skills in
+            Intern, where I contributed to the development of successful
+            software project. During my time there, I gained valuable skills in
             software design, programming, and project management.
           </p>
         </motion.div>
@@ -88,8 +88,9 @@ const Experience = () => {
           />
 
           <p className="font-playfair text-6xl"></p>
-          <p className="text-center text-xl">
-            Removed the un-necessary hardware of Mac Mini Server.
+          <p className="text-center text-md">
+            Removed the current unnecessary hardware of the Mac Mini Server,
+            which was time-consuming and costly.
           </p>
         </motion.div>
 
